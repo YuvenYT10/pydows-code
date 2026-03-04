@@ -85,12 +85,12 @@
     <p>made by YuvenYT</p>
 
     <button onclick="window.open('https://www.youtube.com/@YuvenYTofficial', '_blank')">visit my youtube</button>
-    <button onclick="window.open('https://github.com/YuvenYT10/pydows-code/blob/main/pydows%28beta%29.py', '_blank')">view code</button>
+    <button onclick="window.open('https://github.com/YuvenYT10/pydows-code/blob/main/pydows.py', '_blank')">view code</button>
     <button onclick="copyCode()">copy code</button>
 
     <script>
         function copyCode() {
-            fetch('https://raw.githubusercontent.com/YuvenYT10/pydows-code/main/pydows%28beta%29.py')
+            fetch('https://raw.githubusercontent.com/YuvenYT10/pydows-code/main/pydows.py')
             .then(response => response.text())
             .then(text => {
                 navigator.clipboard.writeText(text).then(() => {
