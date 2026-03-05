@@ -1,106 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PyDows 10</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(45deg, #ff6b6b, #f7d794, #6a89cc, #78e08f);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            color: white;
-        }
+<title>PyDows</title>
+<style>
+body{
+    font-family: Arial;
+    text-align:center;
+    background:#111;
+    color:white;
+}
 
-        @keyframes gradientBG {
-            0% {background-position:0% 50%;}
-            50% {background-position:100% 50%;}
-            100% {background-position:0% 50%;}
-        }
+button{
+    padding:12px 20px;
+    margin:10px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
 
-        h1 {
-            f…
-<!DOCTYPE html>
-<html>
-<head>
-    <title>PyDows 10</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(45deg, #ff6b6b, #f7d794, #6a89cc, #78e08f);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            color: white;
-        }
-
-        @keyframes gradientBG {
-            0% {background-position:0% 50%;}
-            50% {background-position:100% 50%;}
-            100% {background-position:0% 50%;}
-        }
-
-        h1 {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 24px;
-            margin: 5px;
-        }
-
-        button {
-            background-color: rgba(0,0,0,0.5);
-            color: white;
-            padding: 12px 25px;
-            margin: 10px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-        }
-
-        button:hover {
-            background-color: rgba(0,0,0,0.8);
-        }
-    </style>
+.download{background:#4CAF50;}
+.code{background:#2196F3;}
+.youtube{background:#FF0000;}
+</style>
 </head>
+
 <body>
 
-    <h1>PyDows 10</h1>
-    <p>version 1.0</p>
-    <p>made by YuvenYT</p>
+<h1>PyDows Application</h1>
+<p>A Python mini OS project made by Yuven.</p>
 
-    <button onclick="window.open('https://www.youtube.com/@YuvenYTofficial', '_blank')">visit my youtube</button>
-    <button onclick="window.open('https://github.com/YuvenYT10/pydows-code/blob/main/pydows.py', '_blank')">view code</button>
-    <button onclick="copyCode()">copy code</button>
 <a href="https://raw.githubusercontent.com/YuvenYT10/pydows-code/main/pydows.py" download>
-<button>Download PyDows</button>
+<button class="download">Download PyDows</button>
 </a>
-    <script>
-        function copyCode() {
-            fetch('https://raw.githubusercontent.com/YuvenYT10/pydows-code/main/pydows.py')
-            .then(response => response.text())
-            .then(text => {
-                navigator.clipboard.writeText(text).then(() => {
-                    alert('Code copied to clipboard!');
-                });
-            });
-        }
-    </script>
+
+<br>
+
+<button class="code" onclick="window.open('https://github.com/YuvenYT10/pydows-code/blob/main/pydows.py')">
+View Code
+</button>
+
+<br>
+
+<button class="youtube" onclick="window.open('https://www.youtube.com/@YuvenYT10')">
+Visit My YouTube
+</button>
 
 </body>
 </html>
